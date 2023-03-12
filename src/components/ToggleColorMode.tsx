@@ -12,7 +12,7 @@ export const ToggleColorMode = () => {
     setTheme(theme === "dark" ? "light" : "dark");
   }
   return (
-    <div className="hover-dark:bg-white flex h-[40px] w-[40px] items-center justify-center rounded-full bg-opacity-50 hover:bg-slate-400">
+    <div className="flex h-[40px] w-[40px] items-center justify-center rounded-full bg-opacity-50 hover:bg-slate-400 dark:hover:bg-white dark:hover:bg-opacity-50">
       <ClientOnly
         fallback={
           <button onClick={toggleColorMode}>
